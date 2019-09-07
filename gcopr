@@ -9,7 +9,7 @@ echo "Pushed."
 git commit --allow-empty -m "empty commit"
 echo "Empty ommited."
 
-gp
+git push
 echo 'Repushed.'
 
 hub pull-request -b $2
