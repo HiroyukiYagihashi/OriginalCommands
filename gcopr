@@ -1,0 +1,15 @@
+#!/bin/sh
+
+git checkout -b $1
+echo "Checkouted."
+
+git push -u origin $1
+echo "Pushed."
+
+git commit --allow-empty -m "empty commit"
+echo "Empty ommited."
+
+gp
+echo 'Repushed.'
+
+hub pull-request -b $2
