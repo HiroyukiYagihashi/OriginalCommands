@@ -3,16 +3,11 @@
 git checkout -b $1
 echo "Checked out."
 
-git push -u origin $1
-echo "Pushed."
-
 git commit --allow-empty -m "empty commit"
 echo "Empty committed."
 
-git push -u origin $1
-echo "Repushed."
-
-git checkout $1
+git push -set-upstream origin $1
+echo "Pushed."
 
 hub pull-request -b $2
 echo "Done pull request! Enjoy your developer life!"
