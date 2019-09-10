@@ -12,5 +12,7 @@ echo "Empty committed."
 git push -u origin $1
 echo "Repushed."
 
+git checkout $1
+
 hub pull-request -b $2
 echo "Done pull request! Enjoy your developer life!"
