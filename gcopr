@@ -6,7 +6,7 @@ echo "Checked out."
 git commit --allow-empty -m "empty commit"
 echo "Empty committed."
 
-git push -set-upstream origin $1
+git push --set-upstream origin $1
 echo "Pushed."
 
 hub pull-request -b $2
