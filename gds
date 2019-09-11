@@ -1,0 +1,5 @@
+#!/bin/sh
+
+git diff
+
+git status
