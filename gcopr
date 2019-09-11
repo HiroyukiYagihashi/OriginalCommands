@@ -9,5 +9,5 @@ echo "Empty committed."
 git push --set-upstream origin $1
 echo "Pushed."
 
-# hub pull-request -b $2
+hub pull-request -b $2
 echo "Done pull request! Enjoy your developer life!"
